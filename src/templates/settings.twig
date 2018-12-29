@@ -1,0 +1,39 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * Yotpo plugin for Craft CMS 3.x
+ *
+ * Yotpo Settings.twig
+ *
+ * @author    Superbig
+ * @copyright Copyright (c) 2018 Superbig
+ * @link      https://superbig.co
+ * @package   Yotpo
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{% do view.registerAssetBundle("superbig\\yotpo\\assetbundles\\yotpo\\YotpoAsset") %}
+
+{{ forms.textField({
+    label: 'App Key',
+    instructions: 'Enter some setting here.',
+    id: 'appKey',
+    name: 'appKey',
+    value: settings['appKey']}) }}
+
+{{ forms.textField({
+    label: 'App Secret',
+    instructions: 'Enter some setting here.',
+    id: 'appSecret',
+    name: 'appSecret',
+    value: settings['appSecret']}) }}
+
+{{ forms.lightswitchField({
+    label: 'Use Variant SKUs as Yotpo Product ID',
+    instructions: 'This will set the _external product ID_ attribute in Yotpo to the Variant\'s SKU. If no SKU is set, it falls back to the Variant ID in Commerce.',
+    id: 'useVariantSkuAsProductId',
+    name: 'useVariantSkuAsProductId',
+    on: settings['useVariantSkuAsProductId']}) }}

@@ -1,0 +1,40 @@
+{
+    "name": "superbig/craft-yotpo",
+    "description": "Integrate Craft Commerce with Yotpo.",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "yotpo"
+    ],
+    "support": {
+        "docs": "https://github.com/superbigco/craft-yotpo/blob/master/README.md",
+        "issues": "https://github.com/superbigco/craft-yotpo/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Superbig",
+            "homepage": "https://superbig.co"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0",
+        "craftcms/commerce": "^2.0.0",
+        "tightenco/collect": "^5.5|^5.6|^5.7"
+    },
+    "autoload": {
+        "psr-4": {
+          "superbig\\yotpo\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Yotpo",
+        "handle": "yotpo",
+        "changelogUrl": "https://raw.githubusercontent.com/superbigco/craft-yotpo/master/CHANGELOG.md",
+        "class": "superbig\\yotpo\\Yotpo"
+    }
+}

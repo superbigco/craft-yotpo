@@ -1,0 +1,24 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * Yotpo plugin for Craft CMS
+ *
+ * YotpoUtility Utility Content
+ *
+ * @author    Superbig
+ * @copyright Copyright (c) 2018 Superbig
+ * @link      https://superbig.co
+ * @package   Yotpo
+ * @since     1.0.0
+ */
+#}
+
+<h1>YotpoUtility</h1>
+
+{% set iconUrl = view.getAssetManager().getPublishedUrl('@superbig/yotpo/assetbundles/yotpoutilityutility/dist', true) ~ '/img/YotpoUtility-icon.svg' %}
+
+<img src="{{ iconUrl }}" height="64" width="64" />
+
+<p>Your Utility content goes here</p>
+
+<p>{{ someVar }}</p>

@@ -2,6 +2,8 @@
 
 Integrate Craft Commerce with Yotpo.
 
+_NOTE: This is currently a work-in-progress repo. The plugin is not yet ready for use._
+
 ![Screenshot](resources/icon.png)
 
 ## Requirements
@@ -18,7 +20,7 @@ To install the plugin, follow these instructions.
 
 2. Then tell Composer to load the plugin:
 
-        composer require superbigco/yotpo
+        composer require superbigco/craft-yotpo
 
 3. In the Control Panel, go to Settings → Plugins and click the “Install” button for Yotpo.
 
